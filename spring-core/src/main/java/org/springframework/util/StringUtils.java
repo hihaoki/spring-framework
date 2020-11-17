@@ -652,6 +652,7 @@ public abstract class StringUtils {
 		if (!hasLength(path)) {
 			return path;
 		}
+		// 将 \\ 翻译成/
 		String pathToUse = replace(path, WINDOWS_FOLDER_SEPARATOR, FOLDER_SEPARATOR);
 
 		// Shortcut if there is no work to do

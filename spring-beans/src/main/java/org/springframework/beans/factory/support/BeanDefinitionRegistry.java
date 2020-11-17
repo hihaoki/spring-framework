@@ -22,6 +22,7 @@ import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.core.AliasRegistry;
 
 /**
+ * 对bean定义的增删改操作
  * Interface for registries that hold bean definitions, for example RootBeanDefinition
  * and ChildBeanDefinition instances. Typically implemented by BeanFactories that
  * internally work with the AbstractBeanDefinition hierarchy.
@@ -45,7 +46,7 @@ import org.springframework.core.AliasRegistry;
  * @see org.springframework.beans.factory.xml.XmlBeanDefinitionReader
  * @see PropertiesBeanDefinitionReader
  */
-public interface BeanDefinitionRegistry extends AliasRegistry {
+public interface BeanDefinitionRegistry extends AliasRegistry { // 集成对别名的操作
 
 	/**
 	 * Register a new bean definition with this registry.
